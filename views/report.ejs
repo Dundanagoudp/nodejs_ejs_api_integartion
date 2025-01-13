@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Course</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<%- include('./header') %>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
+    <!-- Main Content -->
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 w-3/4 max-w-lg">
+            <h1 class="text-2xl font-bold text-center mb-6">Express Course</h1>
+            <ul>
+                <% name.map((nameItem) => { %>
+                    <li class="border border-gray-300 rounded-lg p-4 mb-4 shadow-sm">
+                        <p class="font-medium text-gray-700">Name: <%= nameItem %></p>
+                        <p class="text-gray-600">Age: <%= age %></p>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</body>
+  <!-- <%- include('./footer') %> -->
+</html>
